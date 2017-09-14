@@ -1,0 +1,21 @@
+---
+title: "My first Markdown"
+author: "Jehova Jr"
+date: "14 de setembro de 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Our First markdown for EEB workshop
+
+```{r echo = FALSE}
+# ECHO means the code doesn't display
+plot(x=iris$Sepal.Length,
+     y=iris$Sepal.Width, 
+     xlab="Sepal Length",
+     ylab="Sepal Width",
+     main="Iris measurements")
+```
